@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="7.3180" tests="3" failures="1">
+  <testsuite name="Root Suite" timestamp="2022-05-05T18:45:27" tests="0" file="cypress/integration/spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Verifying Alerts" timestamp="2022-05-05T18:45:27" tests="3" time="7.3180" failures="1">
+    <testcase name="Verifying Alerts Loads main page" time="4.7400" classname="Loads main page">
+    </testcase>
+    <testcase name="Verifying Alerts Contains active alarm" time="2.5780" classname="Contains active alarm">
+    </testcase>
+    <testcase name="Verifying Alerts Returns all good." time="0.0000" classname="Returns all good.">
+      <failure message="`cy.request()` failed on:
+
+http://netdata:19999/api/v1/manage/health?cmd=RESET
+
+The response we received from your web server was:
+
+  &gt; 403: Forbidden
+
+This was considered a failure because the status code was not `2xx` or `3xx`.
+
+If you do not want status codes to cause failures pass the option: `failOnStatusCode: false`
+
+-----------------------------------------------------------
+
+The request we sent was:
+
+Method: GET
+URL: http://netdata:19999/api/v1/manage/health?cmd=RESET
+Headers: {
+  &quot;Connection&quot;: &quot;keep-alive&quot;,
+  &quot;user-agent&quot;: &quot;Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/9.6.0 Chrome/94.0.4606.81 Electron/15.5.1 Safari/537.36&quot;,
+  &quot;accept&quot;: &quot;*/*&quot;,
+  &quot;accept-encoding&quot;: &quot;gzip, deflate&quot;
+}
+
+-----------------------------------------------------------
+
+The response we got was:
+
+Status: 403 - Forbidden
+Headers: {
+  &quot;connection&quot;: &quot;keep-alive&quot;,
+  &quot;server&quot;: &quot;Netdata Embedded HTTP Server v1.34.0-69-nightly&quot;,
+  &quot;access-control-allow-origin&quot;: &quot;*&quot;,
+  &quot;access-control-allow-credentials&quot;: &quot;true&quot;,
+  &quot;content-type&quot;: &quot;text/plain; charset=utf-8&quot;,
+  &quot;date&quot;: &quot;Thu, 05 May 2022 18:45:36 UTC&quot;,
+  &quot;cache-control&quot;: &quot;no-cache, no-store, must-revalidate&quot;,
+  &quot;pragma&quot;: &quot;no-cache&quot;,
+  &quot;expires&quot;: &quot;Thu, 05 May 2022 18:45:37 UTC&quot;,
+  &quot;content-encoding&quot;: &quot;gzip&quot;,
+  &quot;transfer-encoding&quot;: &quot;chunked&quot;
+}
+Body: Auth Error
+
+https://on.cypress.io/request" type="CypressError"><![CDATA[CypressError: `cy.request()` failed on:
+
+http://netdata:19999/api/v1/manage/health?cmd=RESET
+
+The response we received from your web server was:
+
+  > 403: Forbidden
+
+This was considered a failure because the status code was not `2xx` or `3xx`.
+
+If you do not want status codes to cause failures pass the option: `failOnStatusCode: false`
+
+-----------------------------------------------------------
+
+The request we sent was:
+
+Method: GET
+URL: http://netdata:19999/api/v1/manage/health?cmd=RESET
+Headers: {
+  "Connection": "keep-alive",
+  "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/9.6.0 Chrome/94.0.4606.81 Electron/15.5.1 Safari/537.36",
+  "accept": "*/*",
+  "accept-encoding": "gzip, deflate"
+}
+
+-----------------------------------------------------------
+
+The response we got was:
+
+Status: 403 - Forbidden
+Headers: {
+  "connection": "keep-alive",
+  "server": "Netdata Embedded HTTP Server v1.34.0-69-nightly",
+  "access-control-allow-origin": "*",
+  "access-control-allow-credentials": "true",
+  "content-type": "text/plain; charset=utf-8",
+  "date": "Thu, 05 May 2022 18:45:36 UTC",
+  "cache-control": "no-cache, no-store, must-revalidate",
+  "pragma": "no-cache",
+  "expires": "Thu, 05 May 2022 18:45:37 UTC",
+  "content-encoding": "gzip",
+  "transfer-encoding": "chunked"
+}
+Body: Auth Error
+
+https://on.cypress.io/request
+    at http://netdata:19999/__cypress/runner/cypress_runner.js:164670:80
+    at tryCatcher (http://netdata:19999/__cypress/runner/cypress_runner.js:13022:23)
+    at Promise._settlePromiseFromHandler (http://netdata:19999/__cypress/runner/cypress_runner.js:10957:31)
+    at Promise._settlePromise (http://netdata:19999/__cypress/runner/cypress_runner.js:11014:18)
+    at Promise._settlePromise0 (http://netdata:19999/__cypress/runner/cypress_runner.js:11059:10)
+    at Promise._settlePromises (http://netdata:19999/__cypress/runner/cypress_runner.js:11139:18)
+    at _drainQueueStep (http://netdata:19999/__cypress/runner/cypress_runner.js:7729:12)
+    at _drainQueue (http://netdata:19999/__cypress/runner/cypress_runner.js:7722:9)
+    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://netdata:19999/__cypress/runner/cypress_runner.js:7738:5)
+    at Async.drainQueues (http://netdata:19999/__cypress/runner/cypress_runner.js:7608:14)
+From Your Spec Code:
+    at Context.eval (http://netdata:19999/__cypress/tests?p=cypress/integration/spec.js:112:8)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>
